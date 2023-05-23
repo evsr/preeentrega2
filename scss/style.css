@@ -1,0 +1,123 @@
+main {
+  background-color: beige;
+}
+
+footer {
+  background-color: beige;
+}
+
+header nav ul {
+  font-size: 20px;
+  padding: 5px;
+  text-align: right;
+  font-size: 22px;
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: darkolivegreen;
+}
+
+header h1 {
+  background-color: darkolivegreen;
+  text-transform: uppercase;
+  text-align: left;
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: beige;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 5px;
+  color: darkolivegreen;
+}
+
+main p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  color: darkolivegreen;
+  text-align: center;
+}
+
+body {
+  background-color: darkolivegreen;
+}
+
+main h2 {
+  text-transform: uppercase;
+  text-align: left;
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: darkolivegreen;
+}
+
+header nav ul {
+  font-size: 20px;
+  color: darkolivegreen;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: inherit;
+}
+
+/* imagenes y texto para la pagina recetas*/
+.img1 {
+  color: darkolivegreen;
+}
+
+.imagen1 {
+  background: none;
+  height: 400px;
+  width: 400px;
+  top: 30px;
+  left: 100;
+}
+
+main div p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  color: darkolivegreen;
+  font-display: left;
+}
+
+.img2 {
+  position: relative;
+  background: none;
+  display: left;
+  color: darkolivegreen;
+}
+
+.imagen2 {
+  background: none;
+  height: 400px;
+  width: 400px;
+  top: 30px;
+  left: 100;
+}
+
+.img3 {
+  position: relative;
+  background: none;
+  display: left;
+  color: darkolivegreen;
+}
+
+.imagen3 {
+  background: none;
+  height: 400px;
+  width: 400px;
+  top: 30px;
+  left: 100;
+}
+
+/*Login*/
+header h2 {
+  color: darkolivegreen;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+footer {
+  padding: 20px;
+  color: darkolivegreen;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */
