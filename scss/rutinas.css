@@ -1,15 +1,14 @@
-/* con el signo $ creo las variables */
 /*header*/
-/*sobre nosotros*/
 /* Media Query */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .contenedor {
@@ -76,44 +75,55 @@ nav > a:hover {
   width: 100%;
 }
 
-.toggle-btn {
-  color: white;
-  font-size: 1, 5rem;
-  cursor: pointer;
-  display: none;
-}
-
-.contenedor-sobre-nosotros {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.imagen-sobre-nosotros {
-  width: 60%;
-}
-
-.sobre-nosotros .contenido-textos {
-  width: 60%;
-  font-size: large;
-}
-
-.contenido-textos h3 {
-  margin-bottom: 15px;
-}
-.contenido-textos h3 span {
-  background: darkolivegreen;
-  color: white;
-  border-radius: 50%;
-  display: inline-block;
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
-  width: 30px;
-  height: 30px;
-  padding: 2px;
-  box-shadow: 0 0 6px 0 rgb(0, 0, 0);
-  margin-right: 5px;
+  font-size: 30px;
 }
-.contenido-textos p {
-  padding: 0px 0px 30px 15px;
+
+.table {
+  width: 100%;
+  border: 1px solid beige;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  color: rgb(187, 187, 4);
+  text-align: center;
+}
+.table caption {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 8px 0px;
+  text-align: center;
+}
+.table tr {
+  background-color: beige;
+  border: 1px solid darkolivegreen;
+}
+.table th {
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+}
+.table td {
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+}
+.table thead th {
+  text-transform: uppercase;
+  background-color: darkolivegreen;
+}
+.table tbody tr:hover {
+  background-color: rgba(88, 103, 3, 0.698);
+}
+.table tbody td:hover {
+  background-color: rgba(20, 81, 7, 0.599);
 }
 
 footer {
@@ -125,8 +135,25 @@ footer {
   justify-content: space-around;
 }
 
+@media screen and (max-width: 600px) {
+  .table {
+    border: 0px;
+  }
+  .table caption {
+    font-size: 22px;
+  }
+  .table thead {
+    display: none;
+  }
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+  }
+}
 @media (max-width: 600px) {
   body {
     padding-left: 5em;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=rutinas.css.map */

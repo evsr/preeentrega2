@@ -1,3 +1,6 @@
+/*header*/
+/* responsive  */
+/* Media Query */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,7 @@
 
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: white;
 }
 
 .contenedor {
@@ -15,6 +19,7 @@ body {
   margin: auto;
   overflow: hidden;
 }
+
 .titulo {
   color: darkolivegreen;
   font-size: 30px;
@@ -22,27 +27,25 @@ body {
   margin-bottom: 60px;
 }
 
-/*header*/
 header {
   width: 100%;
   height: 600px;
-  background: #add100; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-      to right,
-      hsla(70, 87%, 31%, 0.55),
-      hsla(70, 100%, 41%, 0.512)
-    ),
-    url(../assets/images/rutina_de_pilates.jpg.webp); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-      to right,
-      hsla(70, 87%, 31%, 0.55),
-      hsla(70, 100%, 41%, 0.512)
-    ),
-    url(../assets/images/rutina_de_pilates.jpg.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #add100;
+  background: linear-gradient(to right, hsla(70, 87%, 31%, 0.55), hsla(70, 100%, 41%, 0.512)), url(../assets/images/rutina_de_pilates.jpg.webp);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
 }
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 nav {
   text-align: right;
   padding: 30px 50px 0 0;
@@ -57,15 +60,7 @@ nav > a {
 nav > a:hover {
   text-decoration: underline;
 }
-header .textos-header {
-  display: flex;
-  height: 430px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
+
 .textos-header h1 {
   font-size: 50px;
   color: darkolivegreen;
@@ -74,6 +69,7 @@ header .textos-header {
   font-size: 30px;
   color: white;
 }
+
 .wave {
   position: absolute;
   bottom: 0;
@@ -91,11 +87,9 @@ section {
 .side {
   background-color: darkolivegreen;
 }
-
 .side img {
   width: 45%;
 }
-
 .side p {
   color: white;
   max-width: 1000px;
@@ -103,7 +97,6 @@ section {
   line-height: 3em;
   margin-bottom: 30px;
 }
-
 .side p.main-msg {
   color: white;
   font-size: 5em;
@@ -150,23 +143,18 @@ form {
   background-color: white;
 }
 
-input,
-button {
+input {
   border: none;
   outline: none;
   border-radius: 30px;
   font-size: 1.1em;
   background-color: white;
-}
-
-input {
   width: 100%;
   background-color: white;
   color: #333;
   letter-spacing: 0.5px;
   padding: 14px 64px;
 }
-
 input ~ i {
   position: absolute;
   left: 32px;
@@ -176,41 +164,33 @@ input ~ i {
   transition: color 0.4s;
   background-color: white;
 }
-
 input:focus ~ i {
   color: darkolivegreen;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  background-color: white;
 }
 
 button.action {
   color: white;
   padding: 14px 64px;
   margin: 32px auto;
-  background-image: linear-gradient(135deg, #84a11b, #415a28f9);
+  background-image: linear-gradient(135deg, #84a11b, rgba(65, 90, 40, 0.9764705882));
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
   cursor: pointer;
   transition: opacity 0.4s;
 }
-
 button.action:hover {
   opacity: 0.7;
 }
-body {
-  background-color: white;
-}
 
-/* responsive  */
-
-@media (max-width: 780px) {
-  body {
-    grid-template-columns: 1fr;
-  }
-
-  .side {
-    display: none;
-  }
-}
 footer {
   padding: 20px;
   color: darkolivegreen;
@@ -219,9 +199,17 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-/* Media Query */
+
+@media (max-width: 780px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .side {
+    display: none;
+  }
+}
 @media (max-width: 600px) {
   body {
     padding-left: 5em;
   }
-}
+}/*# sourceMappingURL=login.css.map */

@@ -1,6 +1,4 @@
-/* con el signo $ creo las variables */
 /*header*/
-/*sobre nosotros*/
 /* Media Query */
 * {
   margin: 0;
@@ -76,44 +74,12 @@ nav > a:hover {
   width: 100%;
 }
 
-.toggle-btn {
-  color: white;
-  font-size: 1, 5rem;
-  cursor: pointer;
-  display: none;
+.container {
+  color: darkolivegreen;
 }
 
-.contenedor-sobre-nosotros {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.imagen-sobre-nosotros {
-  width: 60%;
-}
-
-.sobre-nosotros .contenido-textos {
-  width: 60%;
-  font-size: large;
-}
-
-.contenido-textos h3 {
-  margin-bottom: 15px;
-}
-.contenido-textos h3 span {
-  background: darkolivegreen;
-  color: white;
-  border-radius: 50%;
-  display: inline-block;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  padding: 2px;
-  box-shadow: 0 0 6px 0 rgb(0, 0, 0);
-  margin-right: 5px;
-}
-.contenido-textos p {
-  padding: 0px 0px 30px 15px;
+main h3 {
+  color: darkolivegreen;
 }
 
 footer {
@@ -129,4 +95,4 @@ footer {
   body {
     padding-left: 5em;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=recetas.css.map */
